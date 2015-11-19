@@ -1,87 +1,167 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/css.css" type="text/css">
-  <!-- Enable responsive view on mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Tiled Photo Gallery in Pure CSS</title>
-</head>
-<body class="no-touch">
-  <div class="wrap">
-        <!-- Define all of the tiles: -->
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image One</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Two</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Three</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Four</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Five</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Six</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Seven</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Eight</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Nine</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Ten</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Eleven</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
-        <div class="titleBox">Image Twelve</div>
-      </div>
-    </div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/css.css" type="text/css">
+        <!-- Enable responsive view on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Tiled Photo Gallery in Pure CSS</title>
+    </head>
+    <body class="no-touch">
+        <div class="wrap"> <!-- Define all of the tiles: -->
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image One</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Two</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Three</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Four</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Five</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Six</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Seven</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Eight</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Nine</div>
+                    </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Ten</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Eleven</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <picture>
+                        <source media="(min-width: 1024px) and (max-width: 2500px)" srcset="http://placehold.it/340x340">
+                        <source media="(min-width: 800px) and (max-width: 1024px)" srcset="http://placehold.it/512x512">
+                        <source media="(min-width: 600px) and (max-width: 800px)" srcset="http://placehold.it/400x400">
+                        <source media="(min-width: 400px) and (max-width: 600px)" srcset="http://placehold.it/600x600">
+                        <source media="(min-width: 50px) and (max-width: 400px)" srcset="http://placehold.it/400x400">
+                        <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
+                    </picture>
+                    <div class="titleBox">Image Twelve</div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
